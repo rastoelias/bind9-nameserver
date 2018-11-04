@@ -108,7 +108,15 @@ options {
 };
 ```
 
-# Restart Bind9
+## Restart Bind9
 ```
 sudo /etc/init.d/bind9 restart
 ```
+
+## APPDOMAIN.TLD
+Set NS for APPDOMAIN.TLD to ns1.DNSDOMAIN.TLD and ns2.DNSDOMAIN.TLD
+
+## DNSDOMAIN.TLD
+Create two A records.
+ns1.DNSDOMAIN.TLD -> IPPRIMARY
+ns2.DNSDOMAIN.TLD -> IPSECONDARY
